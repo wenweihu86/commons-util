@@ -8,6 +8,10 @@ public class DateUtil {
 
     public static final String DEFAULT_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
+    public static String dateToString(Date date) {
+        return dateToString(date, DEFAULT_FORMAT);
+    }
+
     public static String dateToString(Date date, String format) {
         if (date == null) {
             return null;
