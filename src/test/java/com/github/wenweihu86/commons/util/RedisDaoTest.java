@@ -1,15 +1,10 @@
 package com.github.wenweihu86.commons.util;
 
-import com.github.wenweihu86.commmons.util.RedisClusterDao;
 import com.github.wenweihu86.commmons.util.RedisDao;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import redis.clients.jedis.HostAndPort;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class RedisDaoTest {
     private RedisDao redisDao;
