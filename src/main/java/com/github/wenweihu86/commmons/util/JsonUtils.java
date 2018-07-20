@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 
 @SuppressWarnings(value={"unchecked"})
-public class JsonUtil {
+public class JsonUtils {
 
     private static ObjectMapper objectMapper = new ObjectMapper();
 

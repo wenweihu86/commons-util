@@ -1,6 +1,6 @@
 package com.github.wenweihu86.commons.util;
 
-import com.github.wenweihu86.commmons.util.DateUtil;
+import com.github.wenweihu86.commmons.util.DateUtils;
 import org.junit.Test;
 
 import java.util.Date;
@@ -9,8 +9,8 @@ public class DateUtilTest {
 
     @Test
     public void testDateToStr() {
-        Date now = DateUtil.now();
-        String nowStr = DateUtil.dateToString(now);
+        Date now = DateUtils.now();
+        String nowStr = DateUtils.dateToString(now);
         System.out.println(nowStr);
     }
 }

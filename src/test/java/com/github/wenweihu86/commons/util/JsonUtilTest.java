@@ -1,6 +1,6 @@
 package com.github.wenweihu86.commons.util;
 
-import com.github.wenweihu86.commmons.util.JsonUtil;
+import com.github.wenweihu86.commmons.util.JsonUtils;
 import lombok.Getter;
 import lombok.Setter;
 import org.junit.Test;
@@ -25,9 +25,9 @@ public class JsonUtilTest {
         person.setAge(50);
         person.setGender(1);
         person.setBirthday(new Date());
-        String personJson = JsonUtil.toJson(person);
+        String personJson = JsonUtils.toJson(person);
         System.out.println(personJson);
-        Person newPerson = JsonUtil.fromJson(personJson, Person.class);
+        Person newPerson = JsonUtils.fromJson(personJson, Person.class);
         System.out.println(newPerson.birthday);
     }
 }
