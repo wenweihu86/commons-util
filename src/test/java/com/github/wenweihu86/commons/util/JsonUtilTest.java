@@ -3,8 +3,9 @@ package com.github.wenweihu86.commons.util;
 import com.github.wenweihu86.commmons.util.JsonUtil;
 import lombok.Getter;
 import lombok.Setter;
-import org.junit.Assert;
 import org.junit.Test;
+
+import java.util.Date;
 
 public class JsonUtilTest {
 
@@ -14,6 +15,7 @@ public class JsonUtilTest {
         private String name;
         private Integer age;
         private Integer gender;
+        private Date birthday;
     }
 
     @Test
@@ -22,9 +24,10 @@ public class JsonUtilTest {
         person.setName("Jack");
         person.setAge(50);
         person.setGender(1);
+        person.setBirthday(new Date());
         String personJson = JsonUtil.toJson(person);
         System.out.println(personJson);
         Person newPerson = JsonUtil.fromJson(personJson, Person.class);
-        Assert.assertTrue(newPerson.getName().equals(person.getName()));
+        System.out.println(newPerson.birthday);
     }
 }
